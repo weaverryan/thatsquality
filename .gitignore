@@ -10,3 +10,17 @@ web/uploads/*
 
 data/sql/*
 !data/sql/.ignore
+
+lib/model/base/*
+lib/form/base/*
+lib/filter/base/*
+!lib/model/base/.ignore
+!lib/form/base/.ignore
+!lib/filter/base/.ignore
+
+lib/model/*/base/*
+lib/form/*/base/*
+lib/filter/*/base/*
+!lib/model/*/base/.ignore
+!lib/form/*/base/.ignore
+!lib/filter/*/base/.ignore
