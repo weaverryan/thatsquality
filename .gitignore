@@ -1,3 +1,12 @@
 config/databases.yml
-web/uploads/*
 
+cache/*
+!cache/.ignore
+log/*
+!log/.ignore
+
+web/uploads/*
+!web/uploads/.ignore
+
+data/sql/*
+!data/sql/.ignore
