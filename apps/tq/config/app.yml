@@ -1,0 +1,15 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+prod:
+  sympal_config:
+    google_analytics_code:  UA-89373-1
+
+all:
+  sympal_config:
+    default_theme:  tq
+    
+    blog-post:
+      include_stylsheets:  false
+      sidebar:
+        display:    [latest_posts, tags, monthly_history]

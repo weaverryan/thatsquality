@@ -1,0 +1,7 @@
+tqApp:
+  columns:
+    title:       string(255)
+    description: string(255)
+    uri:         string(255)
+  actAs:
+    Timestampable:

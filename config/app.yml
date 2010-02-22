@@ -1,0 +1,12 @@
+all:
+  sympal_config:
+    installed: true
+    current_version: 1.0.0-ALPHA2
+    sfSympalTqThemePlugin:
+      installed: true
+    sfSympalBlogPlugin:
+      installed: true
+    sfSympalCommentsPlugin:
+      installed: true
+    sfSympalTagsPlugin:
+      installed: true
