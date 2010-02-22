@@ -1,0 +1,13 @@
+all:
+  sympal_config:
+    themes:
+      tq:
+        layout: tq
+        stylesheets:
+          - /sfSympalTqThemePlugin/css/reset.css
+          - /sfSympalTqThemePlugin/css/grid_960.css
+          - /sfSympalTqThemePlugin/css/text.css
+          - /sfSympalTqThemePlugin/css/site.css
+        javascripts: []
+        callables:
+          - [sfSympalToolkit, useJQuery]
