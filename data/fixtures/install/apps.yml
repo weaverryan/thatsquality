@@ -1,0 +1,5 @@
+tqApp:
+  regex_app:
+    title:   Regular Expression Tester
+    description: A quick and dirty way to test your regular expressions using PHP's preg_match function.
+    uri:     "http://www.thatsquality.com/apps/regex"

@@ -1,0 +1,104 @@
+# sfSympalPagesPlugin install data fixtures
+
+sfSympalMenuItem:
+  MenuItem_primary:
+    name: primary
+    date_published: '<?php echo date("Y-m-d H:i:s") ?>'
+    label: Home
+    Site: Site_default
+    custom_path: @homepage
+    children:
+      MenuItem_primary_apps:
+        name: Apps
+        date_published: '<?php echo date("Y-m-d H:i:s") ?>'
+        label: Apps         
+        Site: Site_default
+      MenuItem_primary_examples:
+        name: Examples
+        date_published: '<?php echo date("Y-m-d H:i:s") ?>'
+        label: Examples       
+        Site: Site_default
+      MenuItem_primary_contact:
+        name: Contact
+        date_published: '<?php echo date("Y-m-d H:i:s") ?>'
+        label: Contact
+        Site: Site_default
+        #RelatedContent: Content_Page_sample_page
+      MenuItem_primary_apps:
+        name: Apps
+        date_published: '<?php echo date("Y-m-d H:i:s") ?>'
+        label: Apps
+        Site: Site_default
+        RelatedContent: Content_List_Apps
+
+sfSympalContent:
+  Content_Page_home:
+    Type: ContentType_Page
+    slug: home
+    Site: Site_default
+    date_published: '<?php echo date("Y-m-d H:i:s") ?>'
+    custom_path: "/"
+    Slots: [Home_slot_body]
+    CreatedBy: admin
+  Content_List_Apps:
+    Type: ContentType_Page
+    slug: apps
+    Site: Site_default
+    date_published: '<?php echo date("Y-m-d H:i:s") ?>'
+    custom_path: "/apps"
+    CreatedBy: admin
+    template:  apps/list
+    page_title: Useful Applications
+    
+
+sfSympalContentSlot:
+  Home_slot_body:
+    name: body
+    type: Markdown
+    value: |
+      Welcome
+      -------
+      
+      Welcome to your new installation of the Sympal <?php echo sfSympalConfig::getCurrentVersion() ?> content management system. You can signin with the username **<?php echo sfSympalConfig::get('sympal_install_admin_username', null, 'admin') ?>** and password **<?php echo sfSympalConfig::get('sympal_install_admin_password', null, 'admin') ?>** to begin playing with Sympal!
+      
+      Lorem Text
+      ----------
+      
+      Morbi fringilla commodo ipsum. **Suspendisse volutpat** congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies euismod nisi. Gravida mollis, metus *lacus consequat* es.Vestibulum varius accumsan leo. Pellentesque rhoncus mauris a sapien. Proin tincidunt velit sit amet est. Nulla tempor ligula porttitor sapien.
+      Donec lorem mi fermentum at:
+
+      * Ut semsddper elisat sed nullateli
+      * Us ac nisi interdum fau
+      * Erdum fau utilotieu
+      * Betagor chaligonatu
+
+      Donec lorem mi
+      --------------
+      
+      luctus sympal
+      -------------
+      
+      Suspendisse pellentesque luctus sympal. [Sympal](http://www.sympalphp.org "Sympal") fusce sem lorem, convallis ut, dictum at, blandit eu, erat; Etiam et **nulla convallis** risus adipiscing consectetur. *Morbi velit massa*, dapibus at, pharetra at, auctor ornare, risus.
+
+      enim nisl
+      ---------
+      
+      Nunc lobortis, nulla et auctor ultricies, enim nisl *venenatis turpis*, quis pharetra lectus sapien fermentum mauris. Aliquam erat volutpat. Quisque laoreet nibh et magna. Praesent eros. Proin nec risus ac nisi interdum faucibus. **Maecenas fringilla**.    
+  About_Sidebar_slot:
+    name: sidebar_about
+    type: Markdown
+    value: This is text that's all about me
+    Content: [Content_Page_home]
+  About_Sidebar_headshot:
+    name: sidebar_headshot
+    type: Text
+    value: '<a href="http://www.twitter.com/weaverryan" title="@weaverryan" class="float">[asset:assets-ryan-weaver alt="Ryan Weaver"]</a>'
+    Content: [Content_Page_home]
+
+sfSympalPage:
+  home:
+    title: Home  
+    Content: Content_Page_home
+  apps:
+    title: Apps
+    Content: Content_List_Apps
