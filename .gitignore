@@ -8,6 +8,8 @@ log/*
 web/uploads/*
 !web/uploads/.ignore
 
+web/cache/*
+
 data/sql/*
 !data/sql/.ignore
 
