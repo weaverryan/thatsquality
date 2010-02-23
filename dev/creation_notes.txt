@@ -1,3 +1,6 @@
+Initial Setup
+=============
+
  - do the install script
  - replace everything with externals
  - create theme plugin
@@ -34,3 +37,10 @@
    - brought in the breadcrumbs
    - pointed at a template
    - added some fixtures, a Page type content
+
+
+Other Stuff
+===========
+
+ - made a redirect from /articles/:slug to /blog/:slug
+    /articles/:slug -> /blog/:slug
