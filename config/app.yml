@@ -1,7 +1,7 @@
 all:
   sympal_config:
     installed: true
-    current_version: 1.0.0-ALPHA2
+    current_version: 1.0.0-ALPHA3
     sfSympalTqThemePlugin:
       installed: true
     sfSympalBlogPlugin:

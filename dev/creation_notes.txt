@@ -1,0 +1,36 @@
+ - do the install script
+ - replace everything with externals
+ - create theme plugin
+ - set the default_theme: key in my app's app.yml
+ - added in my analytics code
+ - copied pages install and removed most of it, added the basic nav
+ - start setting up a few layout content slots, put them in the fixtures
+ - start filling in pages, I added the blog plugin
+ - put more logic into my post install to pimp out the blog fixtures
+   - took the list (index) and gave it a custom_path
+   - set the page_title
+   - hooking up a few of the app.yml configurations
+ - pimping out the breadcrumbs
+ - weird that when I created a blog post, it didn't automatically live
+    with a menu item under blog. I had to create this, else the breadcrumbs
+    wouldn't show up at all.
+ - the breadcrumbs are a bit hard to style. But, this works:
+      #sympal_breadcrumbs li:before {
+        content: "\00BB \0020";
+      }
+ - pimped out styling on page header
+ -> layout slots still need more work
+ - added comments plugin (wow, it added right to my blog automatically!)
+ - hacking the slots to just grab some random slot if there isn't one (think comments page)
+ - adding the tags plugin
+  - after some mods I made, this should be hella-smooth
+  - it auto-enables itself for blog at the very least
+  - will show up on the blog sidebar
+  - pimped out the sidebar to be configurable
+ - changed the default_path for the blog content type
+ - added an "tqApps" model
+ - added fixtures for the tqApps content list page and menu item
+ - created an old-fashion component/template for this
+   - brought in the breadcrumbs
+   - pointed at a template
+   - added some fixtures, a Page type content
