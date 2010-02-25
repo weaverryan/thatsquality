@@ -3,7 +3,7 @@
 	url = git://github.com/vjousse/symfony-1.4.git
 [submodule "plugins/sfSympalPlugin"]
 	path = plugins/sfSympalPlugin
-	url = git@github.com:sympal/sympal.git
+	url = git@github.com:weaverryan/sympal.git
 [submodule "plugins/sfSympalBlogPlugin"]
 	path = plugins/sfSympalBlogPlugin
 	url = git@github.com:weaverryan/sfSympalBlogPlugin.git
