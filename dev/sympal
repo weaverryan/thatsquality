@@ -1,0 +1,12 @@
+ - make the slots be a specific widget / renderer
+ - need an object rendering type - a really easy choosing widget of some sort (think chooser)
+ - edit one slot at a time
+ - shouldn't be able to create content types
+ - can't choose template for content type when creating a new one
+ - why even be able to choose things like template & module/action for
+   content type - that all requires hard-coding anyways to get it all setup
+   -> is there a better way to get the db values setup to reflect the
+      new code tools you've created in code
+   -> really belongs in a migration, or an upgrade script
+ - places in the system for giving very descriptive education (like when
+   you add a new repo on git)
