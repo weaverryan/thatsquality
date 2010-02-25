@@ -20,3 +20,8 @@ lib/filter/base/*
 base
 
 data/*.index
+
+plugins/sfSympalPlugin
+plugins/sfSympalBlogPlugin
+plugins/sfSympalCommentsPlugin
+plugins/sfSympalTagsPlugin
