@@ -92,7 +92,7 @@ sfSympalContentSlot:
   About_Sidebar_headshot:
     name: sidebar_headshot
     type: Text
-    value: '<a href="http://www.twitter.com/weaverryan" title="@weaverryan" class="float">[asset:assets-ryan-weaver alt="Ryan Weaver"]</a>'
+    value: 'avatar asset will go here'
     Content: [Content_Page_home]
 
 sfSympalPage:

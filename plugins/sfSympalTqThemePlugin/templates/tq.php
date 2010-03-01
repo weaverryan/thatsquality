@@ -35,13 +35,19 @@
   <div id="content" class="container_12">
     <div class="alpha grid_9" id="bd">
       <?php echo $sf_content ?>
+      
+      <div id="footer">
+        Ryan Weaver - Thatsquality.com <?php echo date('Y') ?>
+      </div>
     </div>
     
     <div class="grid_3 omega" id="sd">      
       <div class="section">
         <h3>About the Author</h3>
-        <?php echo get_sympal_content_slot($sympal_content, 'sidebar_headshot', 'Text') ?>
-        <?php echo get_sympal_content_slot($sympal_content, 'sidebar_about', 'Markdown') ?>
+        <a href="http://www.twitter.com/weaverryan" title="@weaverryan" class="float" style="width: 100px;">
+          <?php echo get_sympal_content_slot('sidebar_headshot', array('content' => $sympal_content, 'edit_mode' => 'popup')) ?>
+        </a>
+        <?php echo get_sympal_content_slot('sidebar_about', array('content' => $sympal_content, 'edit_mode' => 'popup', 'type' => 'Markdown')) ?>
         <div class="clear">&nbsp;</div>
       </div>
       
@@ -51,7 +57,5 @@
     </div>
     <div class="clear">&nbsp;</div>
   </div>
-  
-  <div id="footer"></div>
 </body>
 </html>
