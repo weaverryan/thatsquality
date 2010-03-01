@@ -25,3 +25,4 @@ plugins/sfSympalPlugin
 plugins/sfSympalBlogPlugin
 plugins/sfSympalCommentsPlugin
 plugins/sfSympalTagsPlugin
+plugins/sfSympalObjectReplacerPlugin
