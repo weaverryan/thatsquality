@@ -28,3 +28,4 @@ plugins/sfSympalTagsPlugin
 plugins/sfSympalObjectReplacerPlugin
 
 web/sf*
+dev/sql
