@@ -26,3 +26,5 @@ plugins/sfSympalBlogPlugin
 plugins/sfSympalCommentsPlugin
 plugins/sfSympalTagsPlugin
 plugins/sfSympalObjectReplacerPlugin
+
+web/sf*
