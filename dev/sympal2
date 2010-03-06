@@ -1,0 +1,4 @@
+ - give popup forms some sort of width if they're inline so the fancybox
+   isn't super-tiny
+ - can't wrap a slot in an anchor, since the slot will put anchors inside
+   that anchor

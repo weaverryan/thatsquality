@@ -1,0 +1,45 @@
+class sfSympalContentSlotTransform
+{
+  
+}
+
+
+$transform = new sfSympalContentSlotTransform($contentSlot);
+$transform->render();
+
+
+
+ - you want to call $contentSlot->render(), but you want it to be
+    caching appropriately
+
+
+The Cache
+=========
+
+$transform->setText('Some %description% string with %various% wildcard locations');
+$transform->setParams(array(
+  'cool'      => 'description',
+  'various'   => 2,
+));
+
+
+array(
+  'text'    => 'Some %description% string with %various% wildcard locations',
+  'params'  => array(
+    'cool'      => 'description',
+    'various'   => 2,
+  )
+)
+
+array(
+  'text'    => 'Some %description% string with %various% wildcard locations',
+  'params'  => array(
+    'cool'      => array(array('someClass', 'someMethod'), 5)
+    'various'   => array(array('someOtherClass', 'methodName'), 'a param')
+  )
+)
+
+ - one cache file per Content object (containing all of its slots)
+
+
+ - The "syntax replacer" is just one type of transformer family
