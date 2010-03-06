@@ -23,7 +23,7 @@
       <div class="prefix_1 grid_6 omega">
         <div id="nav">
           <span class="id_sel">#nav</span> <span class="brace">{</span>
-          <?php $menu = get_sympal_menu('primary') ?>
+          <?php $menu = get_sympal_menu('primary', false) ?>
           <?php echo $menu ?>
           <span class="brace">}</span>
         </div>
