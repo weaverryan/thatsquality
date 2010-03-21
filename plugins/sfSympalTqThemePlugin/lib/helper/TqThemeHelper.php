@@ -14,12 +14,5 @@
  */
 function tq_get_content_for_layout()
 {
-  $content = sfSympalContext::getInstance()->getCurrentContent();
-  
-  if (!$content)
-  {
-    $content = Doctrine_Query::create()->from('sfSympalContent')->fetchOne();
-  }
-  
-  return $content;
+  return Doctrine_Core::getTable('sfSympalContent')->findOneBySlug('home');
 }
