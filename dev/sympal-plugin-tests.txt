@@ -1,0 +1,10 @@
+ - create test directory
+ - bring in sympal as a submodule in the test directory
+ - modify ProjectConfiguration in the test directory
+ - add a databases.yml with sqlite
+ - change use_database to true in the apps settings.yml
+ - copy unit bootstrap from sympal
+ - put $app='frontend' at the top of unit test
+ - copy cleanup.php, make sure functional includes it
+ - do an install, copy data/test.sqlite to data/fresh_test_db.sqlite
+ - create a config/fresh_app.yml file
