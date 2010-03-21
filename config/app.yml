@@ -10,5 +10,3 @@ all:
       installed: true
     sfSympalTagsPlugin:
       installed: true
-    sfSympalObjectReplacerPlugin:
-      installed: true
