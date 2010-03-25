@@ -10,3 +10,5 @@ all:
       installed: true
     sfSympalTagsPlugin:
       installed: true
+    i18n: true
+    language_codes: 'en,es'
