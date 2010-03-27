@@ -1,5 +1,6 @@
 <?php
 
-class tqAppTable extends sfSympalDoctrineTable
+class tqAppTable extends Doctrine_Table
 {
 }
+
