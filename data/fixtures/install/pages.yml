@@ -48,7 +48,11 @@ sfSympalContent:
     custom_path: "/apps"
     CreatedBy: admin
     template:  apps/list
-    page_title: Useful Applications
+    Translation:
+      en:
+        page_title: Useful Applications
+      es:
+        page_title: Applicaciones Útiles
     
 
 sfSympalContentSlot:
