@@ -15,9 +15,9 @@
     <div class="container_12">
       <div class="alpha grid_5">
         <h1>
-          &lt;<?php echo link_to($sf_sympal_context->getSite()->getTitle(), '@sympal_homepage') ?>/&gt;
+          &lt;<?php echo link_to($sf_sympal_site->getTitle(), '@homepage') ?>/&gt;
         </h1>
-        <h2><?php echo $sf_sympal_context->getSite()->getDescription(ESC_RAW) ?></h2>
+        <h2><?php echo $sf_sympal_site->getDescription(ESC_RAW) ?></h2>
       </div>
       
       <div class="prefix_1 grid_6 omega">
