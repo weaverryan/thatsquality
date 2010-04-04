@@ -7,10 +7,9 @@ class ProjectConfiguration extends sfProjectConfiguration
 {
   public function setup()
   {
-    $this->enablePlugins('sfDoctrinePlugin');
+    $this->enablePlugins('sfDoctrinePlugin', 'sfSympalPlugin');
     require_once(dirname(__FILE__).'/../plugins/sfSympalPlugin/config/sfSympalPluginConfiguration.class.php');
     sfSympalPluginConfiguration::enableSympalPlugins($this);
-    $this->enableAllPluginsExcept('sfPropelPlugin');
   }
   
   /**
