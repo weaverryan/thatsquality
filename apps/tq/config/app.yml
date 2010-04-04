@@ -7,7 +7,9 @@ prod:
 
 all:
   sympal_config:
-    default_theme:  tq
+    theme:
+      default_theme:  default
+      default_theme:  tq
     
     blog-post:
       include_stylsheets:  false
